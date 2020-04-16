@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: dimgrey;
+        }
+        .date , .time {
+            color:gainsboro;
+            font-weight: bolder;
+            font-family: 'Dosis', sans-serif;
+            font-size: 4rem;
+        }
+    </style>
+    <title>HI!</title>
+</head>
+<body>
+    <div class="date"></div>
+    <div class="time"></div>
+    <script src="./node_modules/luxon/build/global/luxon.min.js"></script>
+    <script>
+        window.onload = function() {
+            let tick = () => {
+                let date = luxon.DateTime.local().toFormat('yyyy/MM/dd')
+                let time = luxon.DateTime.local().toFormat('HH:mm:ss')
+                document.querySelector('.date').innerHTML = date
+                document.querySelector('.time').innerHTML = time
+            }
+            tick()
+            setInterval(tick, 1000)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "firstapp",
+  "version": "1.0.0",
+  "description": "keep running keep happy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Austin",
+  "license": "MIT",
+  "dependencies": {
+    "luxon": "^1.23.0"
+  }
+}
