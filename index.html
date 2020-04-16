@@ -34,8 +34,8 @@
             let tick = () => {
                 let date = luxon.DateTime.local().toFormat('yyyy/MM/dd')
                 let time = luxon.DateTime.local().toFormat('HH:mm:ss')
-                document.querySelector('.date').innerHTML = date
-                document.querySelector('.time').innerHTML = time
+                document.querySelector('.date').textContent = date
+                document.querySelector('.time').textContent = time
             }
             tick()
             setInterval(tick, 1000)
