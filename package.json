@@ -9,6 +9,6 @@
   "author": "Austin",
   "license": "MIT",
   "dependencies": {
-    "luxon": "^1.23.0"
+    "luxon": "^1.28.1"
   }
 }
